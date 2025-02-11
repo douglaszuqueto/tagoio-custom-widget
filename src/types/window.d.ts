@@ -1,3 +1,9 @@
+export declare global {
+  interface Window {
+    TagoIO: TTagoIO;
+  }
+}
+
 /**
  * Type of the messaging methods according to the operation used.
  */
@@ -428,9 +434,3 @@ type TTagoIO = {
    */
   openLink: (url: string) => void;
 };
-
-export declare global {
-  interface Window {
-    TagoIO: TTagoIO;
-  }
-}
